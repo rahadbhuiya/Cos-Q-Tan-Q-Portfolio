@@ -1,0 +1,78 @@
+/* Reset & Font */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Body: center content */
+body {
+	background: #050505;
+	color: #fff;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* Projects Section */
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	max-width: 600px;
+}
+
+/* Section Heading */
+.projects h2 {
+	font-size: 2rem;
+	color: #c9a25a; /* accent color */
+	margin-bottom: 2rem;
+}
+
+/* Placeholder Card */
+.projects-placeholder {
+	color: rgba(255,255,255,0.6); /* muted color */
+	font-size: 1.2rem;
+	background: rgba(255,255,255,0.05);
+	padding: 30px;
+	border-radius: 12px;
+	width: 100%;
+	text-align: center;
+	transition: all 0.3s ease;
+	box-shadow: 0 0 15px rgba(201,162,90,0.3);
+	border: 1px solid rgba(201,162,90,0.4);
+}
+
+/* Hover Effect */
+.projects-placeholder:hover {
+	background: rgba(201,162,90,0.1);
+	transform: translateY(-3px);
+	box-shadow: 0 0 20px rgba(201,162,90,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.projects h2 {
+		font-size: 1.8rem;
+	}
+	.projects-placeholder {
+		font-size: 1.1rem;
+		padding: 25px;
+	}
+}
+
+@media (max-width: 480px) {
+	.projects h2 {
+		font-size: 1.5rem;
+	}
+	.projects-placeholder {
+		font-size: 1rem;
+		padding: 20px;
+	}
+}

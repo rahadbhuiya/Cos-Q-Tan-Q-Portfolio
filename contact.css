@@ -1,0 +1,135 @@
+/* Reset & Font */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Center the card */
+.contact-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #050505; /* same as portfolio background */
+	padding: 20px;
+}
+
+/* Container */
+.contact-container {
+	width: 350px;
+	background-color: rgba(5,5,5,0.85); /* dark card */
+	border-radius: 12px;
+	padding: 30px 20px;
+	box-shadow: 0 0 20px rgba(201,162,90,0.4); /* accent glow */
+	border: 1px solid rgba(201,162,90,0.5);
+	transition: all 0.3s ease;
+}
+
+/* Owner Header */
+.contact-owner {
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: #c9a25a; /* accent color */
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+/* Inputs */
+.contact-container input,
+.contact-container textarea {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0;
+	border-radius: 8px;
+	border: 2px solid rgba(201,162,90,0.5);
+	background-color: rgba(255,255,255,0.05);
+	color: #fff;
+	outline: none;
+	font-size: 14px;
+	transition: all 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+	border-color: #c9a25a;
+	background-color: rgba(201,162,90,0.1);
+}
+
+.contact-container textarea {
+	resize: none;
+	text-align: left;
+}
+
+/* Button */
+.contact-container button {
+	width: 100%;
+	padding: 12px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 8px;
+	background-color: #c9a25a; /* accent color */
+	color: #050505;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.contact-container button:hover {
+	background-color: rgba(201,162,90,0.8);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(201,162,90,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.contact-container {
+		width: 90%;
+		padding: 25px 15px;
+	}
+
+	.contact-owner {
+		font-size: 20px;
+	}
+
+	.contact-container input,
+	.contact-container textarea {
+		font-size: 13px;
+		padding: 10px;
+	}
+	
+	.contact-container button {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-container {
+		width: 95%;
+		padding: 20px 10px;
+	}
+
+	.contact-owner {
+		font-size: 18px;
+	}
+
+	.contact-container input,
+	.contact-container textarea {
+		font-size: 12px;
+		padding: 8px;
+	}
+
+	.contact-container button {
+		font-size: 14px;
+		padding: 10px;
+	}
+}

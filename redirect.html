@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submitted - Cos Q Tan Q</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Centered container */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #050505;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .message-container {
+      background-color: rgba(5,5,5,0.85);
+      border-radius: 12px;
+      padding: 40px 30px;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(201,162,90,0.4);
+      border: 1px solid rgba(201,162,90,0.5);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #c9a25a;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+
+  <script>
+    // Redirect to home page after 4 seconds
+    setTimeout(() => {
+      window.location.href = "index.html"; // replace with your home page
+    }, 4000);
+  </script>
+</head>
+<body>
+  <div class="message-container">
+    <h1>Form Submitted Successfully!</h1>
+    <p>Thank you! The form has been submitted successfully. I will reply to you soon!</p>
+  </div>
+</body>
+</html>
